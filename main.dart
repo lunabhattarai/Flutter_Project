@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:lab1/pages/dashboard.dart';
+import 'package:lab1/pages/loginpage.dart';
+import 'package:lab1/pages/mapsclass.dart';
+// import 'package:lab1/pages/dashboardpage.dart';
+// import 'package:lab1/pages/loginpage.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home:  loginPage(),
+      
+    );
+  }
+}
+
